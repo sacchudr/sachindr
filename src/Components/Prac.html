@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" required>
+      </div>
+    
+
+    <style>
+        .form-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  label {
+    position: absolute;
+    left: 0.75rem;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  input:focus
+   label {
+    top: 1rem;
+    font-size: 0.75rem;
+    color: #666;
+  }
+    </style>
+</body>
+</html>
