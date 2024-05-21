@@ -1,0 +1,16 @@
+
+
+.carss{
+    margin: 0px;
+    background-color: red;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: row;
+    } 
+    
+  .sa{
+    display: flex;
+    max-width: 300px;
+    background-color: aliceblue;
+  }

@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import  './omdb.css/Navbar.css';
 import {  Link } from 'react-router-dom'
-import { Menu } from '@mui/icons-material';
+import { Close, Menu } from '@mui/icons-material';
 
 const Navbar = () => {
-  const [state, setstate]=useState()
+  const [state, setstate]=useState(true)
 
   const click=(e)=>{
     setstate(!state)
@@ -26,7 +26,7 @@ const Navbar = () => {
       </div>
 
       <div className='menubutton'>
-      <p onClick={click} ><i className='menu'>{state? <Menu/>:<Menu/> } </i></p>     
+      <p onClick={click} ><i className='menu'>{state? <Menu/>:<Close/> } </i></p>     
       {!state &&(
       <div className='tabs1'>
       <Link className='link' to="/">Home</Link>

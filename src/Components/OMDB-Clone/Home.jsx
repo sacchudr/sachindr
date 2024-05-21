@@ -44,7 +44,7 @@ const Home = () => {
                 <h1  className='heading'>WELCOME TO MY WEBSITE</h1>
                 <p className='heading1'>SEARCH MOVIE POSTER</p>
             </div>
-        <div className='omdbparent'>
+        <div className='omdbsearchparent'>
             <form action="" onSubmit={Submits}>
              <div className='searchinput'> 
             <i><Search/></i>

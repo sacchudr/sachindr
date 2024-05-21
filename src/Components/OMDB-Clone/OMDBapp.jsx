@@ -8,6 +8,7 @@ import Parameeter from './Parameeter'
 import Apikeys from './Api-keys'
 import './omdb.css/omdbapp.css'
 import Footer from './Footer'
+import Carousell from './Carousels'
 
 const OMDBapp = () => {
   return (
@@ -21,6 +22,7 @@ const OMDBapp = () => {
               <Route path='/Parameeter' Component={Parameeter}/>
               <Route path='/Apikeys' Component={Apikeys}/>
             </Routes>
+            <Carousell/>
             <div className='footer'>
         <Footer/>
         </div>

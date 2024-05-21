@@ -42,28 +42,33 @@ const About = () => {
         <div className='cards'>
             <h1>Sponsors</h1>
             <div className='sponsors'>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
-            <a href="inst">Home</a>
+            <a href="https://emby.media/">Emby,</a>
+                  <a href="https://trakt.tv">Trakt,</a>
+                  <a href="https://www.filebot.net"> FileBot,</a>
+                  <a href=""> Reelgood,</a>
+                  <a href="">Xirvik Servers,</a>
+                  <a href=""> Yidio,</a>
+                  <a href=""> mi.tv,</a>
+                  <a href="">Couchpop,</a>
+                  <a href="">What's on Netflix,</a>
+                  <a href=""> Edu Reviewer,</a>
+                  <a href="">Flixboss,</a>
+                  <a href="">StreamingMoviesRight,</a>
+                  <a href="">Scripts on Screen,</a>
+                  <a href="">Writers Per Hour,</a>
+                  <a href="">Medium.com,</a>
+                  <a href="">Write my paper,</a>
+                  <a href=""> Ramotion.com, </a>
+                  <a href="">Phone Trackers,</a>
+                  <a href="">Property for sale in Lake Como,</a>
+                  <a href="">iStarTips, </a>
+                  <a href="">What A Room,</a>
+                  <a href="">Vibelovely,</a>
+                  <a href="">StreamToday, </a>
+                  <a href="">Property for sale in Spain,</a>
+                  <a href="">Top Casinos Reviews</a>
+                  <link rel="alternate" href="atom.xml" type="application/atom+xml" title="Atom" />
+
             </div>
         </div>
     </div>

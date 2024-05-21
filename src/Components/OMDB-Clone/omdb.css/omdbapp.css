@@ -36,6 +36,9 @@ body{
     padding: 4rem 2rem;
     border: 1px  solid #7857bb;
     background-color: #3f2364;
+    /* background-color: rgb(255,255,255,0.1); */
+    /* backdrop-filter: 16px; */
+    /* box-shadow: 0px 0px 16px 1px rgba(179, 0, 255, 0.297); */
     box-sizing: border-box;
     gap: 20px;
 }
@@ -45,6 +48,10 @@ body{
     .omdbmainparent{
         font-size: 14px;
     }
+    .allchildparent{
+        border-radius: 2rem;
+        padding: 3rem 1rem;
+    }
  
 }
 
@@ -52,6 +59,10 @@ body{
     .omdbmainparent{
         font-size: 12px;
         padding: 10px;
+    }
+    .allchildparent{
+        padding: 3rem 0.6rem;
+        border-radius: 1rem;
     }
  
 }
