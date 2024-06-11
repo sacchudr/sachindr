@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-around;
     width: 90%;
+    min-width: 4 00px;
 }
 .footerlogo{
     max-width: 400px;
@@ -91,12 +92,17 @@ ul{
 } */
 
 @media screen and (max-width: 768px){
+    .footer{
+    border-radius: 2rem;
+
+    }
     .footer1{
-        flex-direction: column;
+    flex-direction: column;
     }
     .footerinner,.quicklinks,.socialmedia{
-        flex-direction: column;
-        width : 100%;
+    flex-direction: column;
+    gap: 20px;
+    width : 100%;
     }
     .footerinput{
         width: 60%;
@@ -104,8 +110,12 @@ ul{
 }
 
 @media screen and (max-width: 480px){
+    .footer{
+        border-radius: 0.6rem;
+    }
     .footer1{
-        flex-direction: column;
+    border-radius: 1rem;
+    flex-direction: column;
     }
     .footerinner,.quicklinks,.socialmedia,.footerinput{
         flex-direction: column;

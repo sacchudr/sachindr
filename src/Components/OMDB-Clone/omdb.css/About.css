@@ -56,16 +56,12 @@
     padding: 20px;
     border-radius: 1rem;
     border: 1px solid #ffffff1a;
-  
 }
-.attention:hover{
-    transform:scale(1.04);
-    transition: transform 2s ease;
-}
+
 .patronbutton{
     background-color: #ff4500;
     padding: 10px;
-    color: white;
+    color: #ffffff;
     font-size: 1.2rem;
     border: none;
 }
@@ -76,11 +72,42 @@
     gap: 10px;
 }
 a{
-    color: white;
+    color: #ffffff;
 }
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 768px){
 .omdbapi{
     flex-direction: column;
-}}
+}
+.apiheading{
+    font-size: 3rem;
+}
+.omdbfullform{
+    font-size: 1.4rem;
+}
+
+}
+
+
+@media screen and (max-width: 480px){
+
+    .posterapi{
+        flex-direction: column;
+        border-radius: 0.6rem;
+        padding: 10px;
+    }
+ 
+    .posterapi1{
+        gap: 10px;
+    }
+
+    .cards{
+        border-radius: 0.6rem;
+        gap: 10px;
+        padding: 10px;
+    }
+
+   
+ 
+    }

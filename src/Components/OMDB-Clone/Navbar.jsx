@@ -1,14 +1,28 @@
-import React, { useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import  './omdb.css/Navbar.css';
 import {  Link } from 'react-router-dom'
-import { Close, Menu } from '@mui/icons-material';
+import {  Menu } from '@mui/icons-material';
 
 const Navbar = () => {
-  const [state, setstate]=useState(true)
+  const [state, setstate]=useState()
+  const dropdownRef = useRef(null)
 
-  const click=(e)=>{
+  const click=()=>{
     setstate(!state)
   }
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setstate(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    // return () => {
+    //   document.removeEventListener('mousedown', handleClickOutside);
+    // };
+  }, []);
+
 
   return (
     <React.Fragment>
@@ -25,15 +39,15 @@ const Navbar = () => {
       <Link className='link'  to="/Parameeter">Parameeter</Link>
       </div>
 
-      <div className='menubutton'>
-      <p onClick={click} ><i className='menu'>{state? <Menu/>:<Close/> } </i></p>     
-      {!state &&(
+      <div className='menubutton' ref={dropdownRef}>
+      <p onClick={click} ><i className='menu'>{state? <Menu/>:<Menu/>} </i></p>     
+      {state &&(
       <div className='tabs1'>
-      <Link className='link' to="/">Home</Link>
-      <Link className='link'  to="/About">About</Link>
-      <Link className='link'  to="/Apikeys">Apikeys</Link>
-      <Link className='link'  to="/Contact">Contact</Link>
-      <Link className='link'  to="/Parameeter">Parameeter</Link>
+      <Link className='link' onClick={click} to="/">Home</Link>
+      <Link className='link' onClick={click}  to="/About">About</Link>
+      <Link className='link' onClick={click} to="/Apikeys">Apikeys</Link>
+      <Link className='link' onClick={click} to="/Contact">Contact</Link>
+      <Link className='link' onClick={click} to="/Parameeter">Parameeter</Link>
       </div> 
       )}
    </div>

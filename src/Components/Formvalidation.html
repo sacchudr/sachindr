@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="">First name</label>
+        <input type="text" name="" id="fname">
+        <p id="fn" style="color: red;"></p>
+        <input type="text" name="" id="sname">
+        <p id="sn" style="color: red;"></p>
+        <button onclick="validationform(event)">submit</button>
+    </form>
+    
+
+    </body>
+    <script>
+        function validationform(event){
+            var firstname = document.getElementById("fname").value
+            var secondtname = document.getElementById("sname").value
+
+            if(firstname === "" || firstname == null){
+                document.getElementById("fname").style ="border:1px solid red"
+                document.getElementById("fn").innerHTML = "fill data"
+            }
+            {
+            if(secondtname === "" || secondtname == null){
+                document.getElementById("sname").style ="border:1px solid red"
+                document.getElementById("sn").innerHTML = "fill data"
+            }
+
+
+            }
+            event.preventDefault()
+        }
+    </script>
+</html>

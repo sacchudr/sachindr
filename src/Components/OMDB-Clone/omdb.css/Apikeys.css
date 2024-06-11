@@ -73,7 +73,8 @@
     background-color:transparent;
     border: 1px solid #7857bb;
     background-color: #ffffff0f;
-    color: white;
+    color: #ffffff;
+    box-sizing: border-box;
     margin-bottom: 20px;
 }
 
@@ -94,5 +95,36 @@
 ::placeholder{
     color:#ffffff;
     opacity: 0.4;
+}
 
+@media screen and (max-width: 748px){
+    .emaildelays{
+        border-radius: 0.6rem;
+        padding: 6px;
+    }
+    
+}
+
+
+@media screen and (max-width: 480px){
+.apiparent{
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+}
+.apikeycard{
+    border-radius: 0.6rem;
+}
+    .apibtn{
+        width: 100%;
+    }
+
+    .apikeyform,form{
+        gap: 10px;
+        padding: 6px;
+    }
+    #radioinput{
+        width: 14px;
+        height: 14px;
+    }
 }
